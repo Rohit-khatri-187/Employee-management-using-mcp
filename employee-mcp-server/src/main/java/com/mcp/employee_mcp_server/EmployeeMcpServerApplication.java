@@ -10,6 +10,7 @@ public class EmployeeMcpServerApplication {
 		SpringApplication.run(EmployeeMcpServerApplication.class, args);
 
 		System.out.println("Employee mcp server is started : ");
+//		npx @modelcontextprotocol/inspector
 
 	}
 
