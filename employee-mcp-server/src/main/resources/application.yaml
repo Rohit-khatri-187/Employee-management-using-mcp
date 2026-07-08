@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: employee-mcp-server
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/employeeManagement
+    username: root
+    password: .kcrohit123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
