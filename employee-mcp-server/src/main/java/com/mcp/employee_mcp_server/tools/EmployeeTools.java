@@ -34,7 +34,8 @@ public class EmployeeTools {
 
     @McpTool(
             name = "get_all_employees",
-            description = "Retrieve all employees."
+            description = "Retrieve all employees. Return the complete list of employees including id, name and role.\n" +
+                    "Do not summarize the result."
     )
     public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();

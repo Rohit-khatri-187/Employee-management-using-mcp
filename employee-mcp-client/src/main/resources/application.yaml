@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: employee-mcp-client
+
+
+  ai:
+    openai:
+      api-key: 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
+      base-url: https://api.groq.com/openai/v1
+      chat:
+        model: llama-3.3-70b-versatile
+
+    mcp:
+      client:
+        enabled: true
+        name: employee-client
+
+        streamable-http:
+          connections:
+            employee-mcp-server:
+              url: http://localhost:8081
+              endpoint: /mcp
+
+
+
+server:
+  port: 8080
+
+logging:
+  level:
+    io.modelcontextprotocol: DEBUG
+    org.springframework.ai.mcp: DEBUG

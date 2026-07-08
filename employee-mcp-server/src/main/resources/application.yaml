@@ -21,3 +21,8 @@ spring:
         protocol: streamable
 server:
   port: 8081
+
+logging:
+  level:
+    io.modelcontextprotocol: DEBUG
+    org.springframework.ai.mcp: DEBUG
