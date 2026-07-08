@@ -13,3 +13,11 @@ spring:
       ddl-auto: update
 
 
+  ai:
+    mcp:
+      server:
+        name: employee-mcp-server
+        version: 1.0.0
+        protocol: streamable
+server:
+  port: 8081
